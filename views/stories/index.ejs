@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <%- include('../partials/head.ejs')%>
+  <body>
+    <header>
+      <h1>Stories</h1>
+      <nav>
+        <nav>
+          <ul>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/detox">Detox Centers</a>
+            </li>
+            <li>
+              <a href="/residential">Residential Centers</a>
+            </li>
+            <li>
+              <a href="/stories">Stories</a>
+            </li>
+          </ul>
+            <a href="/stories/new">Share your Experience</a>
+          </li>
+        </ul>
+      </nav>
+      </nav>
+    </header>
+    <main>
+      <h2></h2>
+      <ul>
+        <% for(let i = 0; i < stories.length; i++){ %>
+        <li>
+          <a href="/stories/<%=stories[i]._id%>"><%= stories[i].title %></a>
+        </li>
+        <% } %>
+      </ul>
+    </main>
+    <%- include('../partials/footer.ejs')%>
+  </body>
+</html>

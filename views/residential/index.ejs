@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <%- include('../partials/head.ejs')%>
+  <link rel="stylesheet" href="./css/style.css" />
+  <body>
+    <style type="text/css">
+    </style>
+    <header>
+      <h1>Residential Centers</h1>
+      <nav>
+        <nav>
+          <ul>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/detox">Detox Centers</a>
+            </li>
+            <li>
+              <a href="/residential">Residential Centers</a>
+            </li>
+            <li>
+              <a href="/stories">Share Your Story</a>
+            </li>
+          </ul>
+        </nav>
+      </nav>
+    </header>
+    <main>
+      <h3>Residential Requirements</h3>
+      <p>You must first do an assessment with the Assessment for Residential Treatment (ART) team to hold your spot on the residential bed placement list. The assessment can take up to two and a half hours. The phone number to schedule an appointment with the ART team is (714)-934-4600. </p>
+      <br />
+      <h3>List of Residential Providers</h3>
+      <tr>
+        <td>Gerry House</td>
+        <td>
+          <a href="https://www.straighttalkcounseling.org/gerryhouse"> Gerry House Website</a>
+        </td>
+      <br />
+      <tr>
+        <td>His House</td>
+        <td>
+          <a href="https://hishouserehab.com">His House Website</a>
+        </td>
+      <br /> 
+       <td>Hope House</td>
+        <td>
+          <a href="http://hopehouseoc.com">Hope House Website</a>
+          
+        </td>
+        <br /> 
+      <td>Phoenix House</td>
+        <td>
+          <a href="https://phoenixhouseca.org/santa-ana-residential-services/">Phoenix House Website</a>
+        </td>
+        <br /> 
+        <td>Vera's Sanctuary</td>
+          <td>
+            <a href="https://theteenproject.com/veras-sanctuary-2/">Vera's Sanctuary Website</a>
+          </td>
+          <br /> 
+        <tr>
+          <td>The Villa</td>
+            <td>
+              <a href="https://getconnected.unitedwayoc.org/agency/detail/?agency_id=3791">The Villa Website</a>
+            </td>
+            <br />
+            <td>Woodglen Recovery</td>
+            <td>
+              <a href="https://woodglenrecovery.org">Woodglen Recovery Website</a>
+            </td>
+
+        </tr>
+        <% for(let i = 0; i < residential.length; i++){ %>
+        <li>
+          <a href="/residential/<%= residential[i]._id %>"><%= residential[i].name %></a>
+        </li>
+        <% } %>
+      </ul>
+    </main>
+    <%- include('../partials/footer.ejs')%>
+  </body>
+</html>

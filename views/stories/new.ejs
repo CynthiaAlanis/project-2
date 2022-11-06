@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <%- include('../partials/head.ejs')%>
+  <body>
+    <header>
+      <h1>Create an Stories</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/stories">Stories</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="/stories" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="title" /><br />
+        <label for="body">Body:</label>
+        <textarea name="body"></textarea><br />
+        <input type="submit" value="Share your Story" />
+      </form>
+    </main>
+    <%- include('../partials/footer.ejs')%>
+  </body>
+</html>

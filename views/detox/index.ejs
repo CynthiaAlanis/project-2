@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <%- include('../partials/head.ejs')%>
+  <link rel="stylesheet" href="./css/style.css" />
+  <body>
+    <style type="text/css">
+    </style>
+    <header>
+      <h1>Detox Providers</h1>
+      <nav>
+        <nav>
+          <ul>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/detox">Detox Centers</a>
+            </li>
+            <li>
+              <a href="/residential">Residential Centers</a>
+            </li>
+            <li>
+              <a href="/stories">Share Your Story</a>
+            </li>
+          </ul>
+        </nav>
+      </nav>
+    </header>
+    <main>
+      <h3>Detox Resouces</h3>
+      <br />
+<!-- medical -->
+      <tr>
+        <h5>Withdrawal Management (Medical Detox Services)</h5>
+        <br />
+        <td>College Hospital</td>
+        <td>
+          <a href="https://chc.la/chemical-dependency/">College Hospital Website</a>
+        </td>
+      </tr>
+      <br />
+<!-- non-medical -->
+      <tr>
+        <h5>Social Model Detox (Non-Medical)</h5>
+        <td>Roque Center</td>
+        <td>
+          <a href="https://roquecenterinc.org">Roque Center Website</a>
+        </td>
+      <br /> 
+       <td>Woodglen Detox</td>
+        <td>
+          <a href="https://woodglenrecovery.org">Woodglen Website</a>
+        </td>
+        <br /> 
+      <td>Phoenix House</td>
+        <td>
+          <a href="https://phoenixhouseca.org/detox/">Phoenix House Website</a>
+        </td>
+        <br /> 
+        <td>Telecare Withdrawal Management at Be Well</td>
+          <td>
+            <a href="https://www.telecarecorp.com/news-at-telecare/2021/03/29/new-program-in-southern-california-telecare-withdrawal-management">Telecare Website</a>
+          </td>
+          <br /> 
+<!-- narcotics treatment -->
+        <tr>
+          <h5>Narcotics Treatment Programs</h5>
+          <td>Recovery Solutions Acadia</td>
+            <td>
+              <a href="https://www.acadiahealthcare.com/locations/santa-ana-comprehensive-treatment-center/">Recovery Solutions Acadia Website</a>
+            </td>
+            <br />
+            <td>Western Pacific</td>
+            <td>
+              <a href="http://westpacmed.com/locations.asp">Recovery Solutions Acadia Website</a>
+            </td>
+
+        </tr>
+        <% for(let i = 0; i < detox.length; i++){ %>
+        <li>
+          <a href="/detox/<%= detox[i]._id %>"><%= detox[i].name %></a>
+        </li>
+        <% } %>
+      </ul>
+    </main>
+    <%- include('../partials/footer.ejs')%>
+  </body>
+</html>
