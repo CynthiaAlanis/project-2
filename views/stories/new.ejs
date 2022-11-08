@@ -3,7 +3,7 @@
   <%- include('../partials/head.ejs')%>
   <body>
     <header>
-      <h1>Create an Stories</h1>
+      <h1>Share your Story</h1>
       <nav>
         <ul>
           <li>
@@ -17,8 +17,9 @@
     </header>
     <main>
       <form action="/stories" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" name="title" /><br />
+        Image URL: <input type="text" name="image"/><br />
+        Name:<input type="text" name="name" /><br />
+        Location:<input type="text" name="location" /><br />
         <label for="body">Body:</label>
         <textarea name="body"></textarea><br />
         <input type="submit" value="Share your Story" />

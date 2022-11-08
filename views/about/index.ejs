@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
   <%- include('../partials/head.ejs')%>
-  <link rel="stylesheet" href="./css/style.css" />
-  <body>
-    <style type="text/css">
-
-    </style>
+  <body id="about"> 
     <header>
+      <div>
       <h1>About</h1>
       <nav>
         <nav>
           <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
             <li>
               <a href="/about">About</a>
             </li>
@@ -30,7 +30,7 @@
     <main>
       <h3>About Me</h3>
       <br />
-      <p>Hello, my name is Cynthia Alanis. I work at Orange County Health Care Agency within the Mental Health and Recovery Services Division. While working at Orange County Health Care Agency, I quickly discovered how difficult it is for clients to find the right services. I created a list of resources in hopes to make it less overwhelming for people to locate service providers. </p>
+      <p> Hello, my name is Cynthia Alanis. I work at Orange County Health Care Agency within the Mental Health and Recovery Services Division. While working at Orange County Health Care Agency, I quickly discovered how difficult it is for clients to find the right services. I created a list of resources in hopes to make it less overwhelming for people to locate service providers. </p>
       <ul>
         <% for(let i = 0; i < about.length; i++){ %>
         <li>

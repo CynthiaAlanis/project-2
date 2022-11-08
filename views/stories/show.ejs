@@ -10,13 +10,13 @@
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/stories">Stories Index</a>
+            <a href="/stories">Stories</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section><%= stories.body %></section>
+      <section><%= stories_id.name %></section>
       <section>
         <form action="/stories/<%=stories._id%>?_method=DELETE" method="POST">
           <input type="submit" value="Delete Stories" />

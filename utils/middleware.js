@@ -10,9 +10,9 @@ const storiesRouter = require("../controllers/stories");
 
 // Tell express to use all middleware here
 const middleware = (app) => {
-  app.use(methodOverride("_method")); // override for put and delete requests from forms
-  app.use(express.urlencoded({ extended: true })); // body parser for express
-  app.use(express.static("public")); // serve static css & js files from public
+  app.use(methodOverride("_method"));
+  app.use(express.urlencoded({ extended: true }));
+  app.use(express.static("public")); 
   app.use("/", homeRouter); 
   app.use("/about", aboutRouter); 
   app.use("/detox", detoxRouter); 

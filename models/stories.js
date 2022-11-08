@@ -5,7 +5,9 @@ const mongoose = require("./connection");
 const { Schema, model } = mongoose;
 
 const storiesSchema = mongoose.Schema({
+    image: String,
     name: String,
+    location: String,
     body: String,
   },
   { timestamps: true }
