@@ -11,24 +11,44 @@ h1 {
   font-family: 'Dancing Script', cursive;
   text-align: center;
 }
+h2{
+  color: white ;
+  text-align: center;
+}
 h5{
   text-align: center;
 }
 h3{
   text-align: center;
 }
-#about {
-  background-image: url(https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539__480.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.detox-text{
+  background: rgb(128,128,128,0.8);
+  padding: 10px;
+ margin: 50px;
 }
+ #about {
+  background-image: url(https://live.staticflickr.com/65535/50296726317_2d1ae942e9_b.jpg);
+  height:100vh;
+  background-repeat: no-repeat;
+  background-size:cover; 
+ 
+} 
+
 .detox{
   background-image: url(https://media.istockphoto.com/id/487090514/photo/stairs-to-heaven.jpg?s=612x612&w=0&k=20&c=GDaWYk3h1TzS6XF_A177Ai-bPDDdqdf00vSamly2f44=);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center; 
+}
+*{
+  margin:0;
+  padding:0;
 }
 p{
- background-color: #cacaca; 
+ background-color: #90caf9   ; 
  padding: 10px;
  margin: 50px;
+}
+a{
+  color:rgb(0,0,205)
 }

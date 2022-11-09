@@ -11,7 +11,7 @@ const aboutSchema = mongoose.Schema({
   { timestamps: true }
 );
 
-// Create author model
+
 const About = mongoose.model("About", aboutSchema)
 
 
