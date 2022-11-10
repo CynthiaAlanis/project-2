@@ -1,6 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0 100px;
+  
 }
 img {
   border-radius: 8px;
@@ -10,6 +11,7 @@ img {
 h1 {
   font-family: 'Dancing Script', cursive;
   text-align: center;
+  text-shadow: 4px 4px 4px #aaa;
 }
 h2{
   color: white ;

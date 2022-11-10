@@ -1,0 +1,24 @@
+## Treatment Centers
+-resources for Detox and Residential programs.
+-the users can write about their experiences.
+## Home Page
+-The home page is my index route with all my nav bars.
+## CRUD Routes
+-My CRUD routes are on my stories page.
+-The story page allows users to input an image,name,location and a paragraph describing their experiences with the organizations. The user can edit and delete what they shared. 
+## CSS
+-image background
+-partials
+## Trello
+- https://trello.com/b/bUWRyuSe/addiction-treatment-programs
+
+## Deployed App
+-alanis project 2
+-https://alanis-project-2.herokuapp.com
+
+## Technologies Used
+-JavaScript
+-CSS
+-ejs
+-partials
+-middleware
